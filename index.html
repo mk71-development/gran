@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Happy Birthday Granny ❤️</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Georgia, serif;
+        background: linear-gradient(135deg, #fff4f5, #fce4ec, #fff8e7);
+        color: #563344;
+        text-align: center;
+        overflow-x: hidden;
+      }
+
+      /* HEADER */
+      header {
+        padding: 25px 15px;
+        background: #8e4467;
+        color: white;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      /* HERO */
+      .hero {
+        padding: 70px 20px 50px;
+      }
+
+      .hero h2 {
+        font-size: clamp(2.5rem, 8vw, 4.5rem);
+        color: #a64d79;
+        margin-bottom: 15px;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+      }
+
+      .heart {
+        font-size: 4rem;
+        animation: heartbeat 1.5s infinite;
+        margin: 20px;
+      }
+
+      @keyframes heartbeat {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+      }
+
+      /* AGE CARD */
+      .age-card {
+        display: inline-block;
+        margin: 25px auto;
+        padding: 30px 50px;
+        background: white;
+        border-radius: 25px;
+        box-shadow: 0 10px 30px #d8a7bb55;
+      }
+
+      .age-card h3 {
+        font-size: 1.2rem;
+        color: #a64d79;
+      }
+
+      .age {
+        font-size: 5rem;
+        font-weight: bold;
+        color: #b85c88;
+        margin: 10px;
+      }
+
+      .age-card p {
+        font-size: 1rem;
+      }
+
+      /* SECTIONS */
+      section {
+        padding: 45px 20px;
+      }
+
+      .section-title {
+        font-size: 2rem;
+        color: #a64d79;
+        margin-bottom: 25px;
+      }
+
+      .card {
+        max-width: 750px;
+        margin: auto;
+        padding: 35px;
+        background: white;
+        border-radius: 25px;
+        box-shadow: 0 8px 25px #d8a7bb33;
+        line-height: 2;
+        font-size: 1.1rem;
+      }
+
+      /* BUTTON */
+      button {
+        background: #a64d79;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 30px;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 25px;
+        transition: 0.3s;
+      }
+
+      button:hover {
+        background: #7c3158;
+        transform: scale(1.05);
+      }
+
+      /* SURPRISE */
+      #surprise {
+        display: none;
+        margin-top: 25px;
+        color: #a64d79;
+        font-size: 1.3rem;
+        line-height: 2;
+        animation: fadeIn 1s;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* GALLERY */
+      .gallery {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .photo {
+        width: 230px;
+        height: 230px;
+        border-radius: 20px;
+        background: #f5d6e3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        color: #a64d79;
+        font-size: 1rem;
+        box-shadow: 0 5px 15px #d8a7bb55;
+      }
+
+      .photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* FLOATING HEARTS */
+      .floating-heart {
+        position: fixed;
+        bottom: -50px;
+        color: #d47ba5;
+        animation: floatUp 7s linear forwards;
+        pointer-events: none;
+        z-index: 10;
+      }
+
+      @keyframes floatUp {
+        0% {
+          transform: translateY(0) rotate(0);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.8;
+        }
+        100% {
+          transform: translateY(-110vh) rotate(360deg);
+          opacity: 0;
+        }
+      }
+
+      /* FOOTER */
+      footer {
+        background: #8e4467;
+        color: white;
+        padding: 30px 15px;
+        line-height: 2;
+      }
+
+      footer p {
+        font-size: 1rem;
+      }
+
+      /* MOBILE */
+      @media (max-width: 600px) {
+        .hero {
+          padding-top: 45px;
+        }
+
+        .card {
+          padding: 25px;
+        }
+
+        .age-card {
+          padding: 25px 35px;
+        }
+
+        .age {
+          font-size: 4rem;
+        }
+
+        .section-title {
+          font-size: 1.7rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>❤️ A Special Day for Granny ❤️</h1>
+      <p>2 November 1955 – Forever Loved</p>
+    </header>
+
+    <div class="hero">
+      <div class="heart">💗</div>
+
+      <h2>Happy Birthday, Granny!</h2>
+
+      <p>
+        Today is all about celebrating<br />
+        the most wonderful granny in the world.
+      </p>
+
+      <div class="age-card">
+        <h3>CELEBRATING YOUR BEAUTIFUL LIFE</h3>
+        <div class="age" id="age">71</div>
+        <p>Wonderful years of love and memories ❤️</p>
+      </div>
+
+      <p>🎂 🌷 🎁 🌸 🎉</p>
+    </div>
+
+    <section>
+      <h2 class="section-title">💐 A Birthday Letter 💐</h2>
+
+      <div class="card">
+        <p>
+          Dear Granny,
+          <br /><br />
+
+          Happy Birthday to someone who means so much to our family! ❤️
+          <br /><br />
+
+          Today we celebrate not only your birthday, but also the beautiful
+          person you are. Thank you for your love, kindness, wisdom, warmth and
+          all the wonderful memories you have given us.
+          <br /><br />
+
+          You deserve every bit of happiness in this world. May your days always
+          be filled with laughter, peace, good health, love and countless
+          blessings.
+          <br /><br />
+
+          May every smile you give come back to you a hundred times over.
+          <br /><br />
+
+          We love you more than words could ever express.
+          <br /><br />
+
+          <strong>
+            Happy 71st Birthday, Granny! You are truly one of a kind. ❤️
+          </strong>
+        </p>
+      </div>
+    </section>
+    <!-- Replace these with your granny's pictures <section>
+    <h2 class="section-title">🌸 Beautiful Memories 🌸</h2>
+
+    <div class="gallery">
+
+       
+
+        <div class="photo">
+            <img src="granny1.jpg"
+                 alt="Beautiful memory"
+                 onerror="this.remove();this.parentElement.innerHTML='❤️ Our Memories ❤️'">
+        </div>
+
+        <div class="photo">
+            <img src="granny2.jpg"
+                 alt="Family memory"
+                 onerror="this.remove();this.parentElement.innerHTML='🌷 Family Love 🌷'">
+        </div>
+
+        <div class="photo">
+            <img src="granny3.jpg"
+                 alt="Special moment"
+                 onerror="this.remove();this.parentElement.innerHTML='💗 Special Moments 💗'">
+        </div>
+
+    </div>
+
+    <p style="margin-top:20px;">
+        Every moment with you is a memory worth keeping.
+    </p>
+</section>-->
+
+    <section>
+      <h2 class="section-title">🎁 A Little Birthday Surprise 🎁</h2>
+
+      <p>Granny, there is something special waiting just for you...</p>
+
+      <button onclick="showSurprise()">Open Your Birthday Surprise ❤️</button>
+
+      <div id="surprise">
+        <h2>🎉 HAPPY BIRTHDAY GRANNY! 🎉</h2>
+
+        <p>
+          You are loved beyond measure.<br />
+          You are cherished every single day.<br />
+          You make our world a better place.
+          <br /><br />
+
+          🌹 May your heart always be happy. 🌹<br />
+          🌸 May your health always be strong. 🌸<br />
+          💗 May you always know how much you are loved. 💗
+          <br /><br />
+
+          <strong> 71 YEARS YOUNG AND STILL AMAZING! ❤️ </strong>
+        </p>
+
+        <div style="font-size: 3rem; margin-top: 20px">🎂 🎈 🎁 🎊 💐</div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">❤️ With All Our Love ❤️</h2>
+
+      <div class="card">
+        <p>
+          No birthday cake could ever be as sweet as having you in our lives.
+          <br /><br />
+
+          Thank you for being our Granny.
+          <br /><br />
+
+          <strong>
+            Happy Birthday, Granny!<br />
+            We love you always and forever. ❤️
+          </strong>
+        </p>
+
+        <div style="font-size: 3rem; margin-top: 20px">🌷 💗 🌷</div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Made with ❤️ especially for Granny</p>
+      <p>2 November 1955 – 2 November 2026</p>
+      <p>71 Years of Beautiful Memories 🌸</p>
+    </footer>
+
+    <script>
+      // Calculate Granny's age automatically
+      const birthday = new Date(1955, 10, 2);
+
+      function calculateAge() {
+        const today = new Date();
+
+        let age = today.getFullYear() - birthday.getFullYear();
+
+        const birthdayThisYear = new Date(today.getFullYear(), 10, 2);
+
+        if (today < birthdayThisYear) {
+          age--;
+        }
+
+        document.getElementById("age").textContent = age;
+      }
+
+      calculateAge();
+
+      // Birthday surprise
+      function showSurprise() {
+        const surprise = document.getElementById("surprise");
+
+        surprise.style.display = "block";
+
+        createConfetti();
+
+        surprise.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+      }
+
+      // Floating hearts
+      function createHeart() {
+        const heart = document.createElement("div");
+
+        heart.className = "floating-heart";
+
+        heart.innerHTML = ["❤️", "💗", "💕", "🌸", "💖"][
+          Math.floor(Math.random() * 5)
+        ];
+
+        heart.style.left = Math.random() * 100 + "vw";
+
+        heart.style.fontSize = 15 + Math.random() * 25 + "px";
+
+        heart.style.animationDuration = 5 + Math.random() * 5 + "s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+          heart.remove();
+        }, 10000);
+      }
+
+      setInterval(createHeart, 700);
+
+      // Birthday confetti
+      function createConfetti() {
+        for (let i = 0; i < 100; i++) {
+          const confetti = document.createElement("div");
+
+          confetti.innerHTML = ["🎉", "💗", "✨", "🌸", "🎊"][
+            Math.floor(Math.random() * 5)
+          ];
+
+          confetti.style.position = "fixed";
+          confetti.style.left = Math.random() * 100 + "vw";
+          confetti.style.top = "-30px";
+          confetti.style.fontSize = "20px";
+          confetti.style.zIndex = "9999";
+          confetti.style.pointerEvents = "none";
+
+          document.body.appendChild(confetti);
+
+          const animation = confetti.animate(
+            [
+              { transform: "translateY(0) rotate(0deg)", opacity: 1 },
+              { transform: `translateY(100vh) rotate(720deg)`, opacity: 0 },
+            ],
+            {
+              duration: 3000 + Math.random() * 3000,
+              easing: "ease-out",
+            },
+          );
+
+          animation.onfinish = () => confetti.remove();
+        }
+      }
+    </script>
+  </body>
+</html>
